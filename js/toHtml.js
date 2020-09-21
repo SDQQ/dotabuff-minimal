@@ -20,7 +20,7 @@ function toHtml(Arr) {
     // getData.getKDA(item).then(res => div.querySelector('.item__kda').textContent = `Килов-${res.kills} Смертей-${res.deaths} Ассистов-${res.assists}`);
     getData.getKDA(item).then(res=> div.querySelectorAll('.table__score').forEach((item,i) => item.textContent = res[i]));
       //  
-    getData.getItemIcon(item).then(res => div.querySelectorAll('.items').forEach((i, index) => i.style.backgroundImage = `url(..${res[index].img})`));
+    getData.getItemIcon(item).then(res => div.querySelectorAll('.items').forEach((i, index) => i.style.backgroundImage = `url(${res[index].img})`));
     getData.getWinStatus(item).then(res => {
       if (res === 'Победа') {
         div.style.borderColor = 'Green';
