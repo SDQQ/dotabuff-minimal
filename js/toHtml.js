@@ -29,7 +29,7 @@ function toHtml(Arr) {
     });
     let div = document.createElement('div');
     div.classList.add('item');
-    div.innerHTML = `<img href='../Abyssal_Blade_icon.png' class="item__hero-icon"></img> 
+    div.innerHTML = ` 
     <div class="item__hero-icon"></div>
     <div class="item__stats">
       <div class="item__kda">
@@ -57,6 +57,7 @@ function toHtml(Arr) {
       </div>
     </div>
     <div class="item__status">
+    <img src="../Abyssal_Blade_icon.png" alt="">
       <p class="status__description" >Lose</p>
     </div>`;
     document.querySelector('.container').append(div);
