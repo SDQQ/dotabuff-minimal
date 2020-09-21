@@ -57,7 +57,6 @@ function toHtml(Arr) {
       </div>
     </div>
     <div class="item__status">
-    <img src="../js/Abyssal_Blade_icon.png" alt="">
       <p class="status__description" >Lose</p>
     </div>`;
     document.querySelector('.container').append(div);
