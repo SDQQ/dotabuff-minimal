@@ -1680,7 +1680,7 @@ const items = [{
   },
   {
     "id": 119,
-    "img": "../img/items/Shiva's_Guard_icon.png",
+    "img": "../img/items/Shiva.png",
     "dname": "Shiva's Guard",
     "qual": "epic",
     "cost": 4850,
