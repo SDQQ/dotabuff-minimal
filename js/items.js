@@ -1980,7 +1980,7 @@ const items = [{
   },
   {
     "id": 139,
-    "img": "../img/items/Butterfly_icon.png",
+    "img": "../img/items/butterfly_icon.png",
     "dname": "Butterfly",
     "qual": "epic",
     "cost": 5275,
