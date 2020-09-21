@@ -29,7 +29,8 @@ function toHtml(Arr) {
     });
     let div = document.createElement('div');
     div.classList.add('item');
-    div.innerHTML = `<div class="item__hero-icon"></div>
+    div.innerHTML = `<img href='../Abyssal_Blade_icon.png' class="item__hero-icon"></img> 
+    <div class="item__hero-icon"></div>
     <div class="item__stats">
       <div class="item__kda">
       <table class="item__table">
