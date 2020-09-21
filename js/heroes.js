@@ -532,7 +532,7 @@
   {
     "name": "Террорблейде",
     "id": 109,
-    "icon":'./img/hero/Terrorblade_icon.png'
+    "icon":'../img/hero/Terrorblade_icon.png'
   },
   {
     "name": "Фениксе",
