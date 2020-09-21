@@ -29,7 +29,7 @@ function toHtml(Arr) {
     });
     let div = document.createElement('div');
     div.classList.add('item');
-    div.innerHTML = `<img class="item__hero-icon"></img>
+    div.innerHTML = `<div class="item__hero-icon"></div>
     <div class="item__stats">
       <div class="item__kda">
       <table class="item__table">
