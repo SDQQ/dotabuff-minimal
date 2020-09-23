@@ -750,7 +750,7 @@ const items = [{
   },
   {
     "id": 41,
-    "img": "../img/items/Bottle_(Full)_icon.png",
+    "img": "../img/items/Bottle-Full.png",
     "dname": "Bottle",
     "qual": "common",
     "cost": 625,
@@ -1170,7 +1170,7 @@ const items = [{
   },
   {
     "id": 73,
-    "img": "../img/items/Bracer_icon.png",
+    "img": "../img/items/Bracer-icon.png",
     "dname": "Bracer",
     "qual": "common",
     "cost": 510,
@@ -1230,7 +1230,7 @@ const items = [{
   },
   {
     "id": 81,
-    "img": "../img/items/Vladmir's_Offering_icon.png",
+    "img": "../img/items/Vladmirs_Offering_icon.png",
     "dname": "Vladmir's Offering",
     "qual": "rare",
     "cost": 2375,
@@ -1965,7 +1965,7 @@ const items = [{
   },
   {
     "id": 137,
-    "img": "../img/items/Radiance_(Active)_icon.png",
+    "img": "../img/items/Radiance_Active_icon.png",
     "dname": "Radiance",
     "qual": "epic",
     "cost": 5150,
