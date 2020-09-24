@@ -5,4 +5,4 @@ webpack.config.js
 test
 pngmin.js
 original_img
-src
+srcs
