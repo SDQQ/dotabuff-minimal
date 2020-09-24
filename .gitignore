@@ -2,4 +2,6 @@ node_modules
 package-lock.json
 package.json
 webpack.config.js
-dist
+test
+pngmin.js
+original_img

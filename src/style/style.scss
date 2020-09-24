@@ -1,0 +1,173 @@
+@import "../../node_modules/normalize.css/normalize";
+
+* {
+  box-sizing: border-box;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+body {
+  background-color: rgb(87, 90, 95);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item {
+  margin: 25px 100px 25px 100px;
+  border: 7px solid red;
+  border-radius: 20px;
+  max-height: 164px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.596);
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.712);
+  }
+}
+
+.item__kda {
+  text-align: center;
+  line-height: 30px;
+  height: 50%;
+  background-color: rgb(192, 192, 192);
+}
+
+.item__table {
+  width: 100%;
+
+  th {
+    border: 2px solid black
+  }
+
+  td {
+    background-color: rgb(224, 224, 224);
+    border: 2px solid black
+  }
+}
+
+.item__hero-icon {
+  width: 256px;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.item__stats {
+  border-left: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  flex-grow: 1;
+  align-self: end;
+}
+
+.item__items {
+  display: flex;
+}
+
+.items {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 88px;
+  height: 64px;
+  background-image: red;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.item__status {
+  border-left: 2px solid black;
+  width: 150px;
+  background-color: rgb(192, 192, 192);
+
+  .status__description {
+    padding-top: 15px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  body{
+    margin: 0;
+  }
+  .item {
+    margin: 15px 5px 15px 5px;
+    border: 4px solid red;
+    border-radius: 20px;
+    height: 82px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.596);
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      margin-bottom: 20px;
+      box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.712);
+    }
+  }
+
+  .item__kda {
+    text-align: center;
+    line-height: 3px;
+    height: 50px;
+    background-color: rgb(192, 192, 192);
+  }
+
+  .items {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 5%;
+    height: 34px;
+    background-image:red;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .item__status{
+    display: none;
+  }
+  
+
+  .item__hero-icon {
+    width: 30%;
+    height: auto;
+    // background-image: url('../img/hero/Pudge_icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .item__stats {
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    flex-grow: 1;
+    align-self: end;
+    height: 50%;
+  }
+  .item__table {
+    width: 100%;
+    height: 40px;
+  
+    th {
+      border: 2px solid black
+    }
+  
+    td {
+      background-color: rgb(224, 224, 224);
+      border: 2px solid black
+    }
+  }
+}
