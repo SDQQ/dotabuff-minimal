@@ -1,0 +1,53 @@
+.statistic-wrap {
+  position: relative;
+  z-index: 0;
+  margin: 0 auto;
+  margin-top: 0px;
+  width: 95%;
+ background-color:#6699CC;  
+ overflow: hidden;
+ img{
+  opacity: 0;
+  transition: 0.3s;
+}
+}
+.hide {
+  display: none;
+}
+
+.show {
+  animation-name: slideDown;
+  animation-duration: .8s;
+}
+
+.close {
+  animation-name: slideUp;
+  animation-duration: .8s;
+}
+
+@media (max-width: 500px) {
+  .statistic-wrap {
+    width: 95%;
+  }
+  .show {
+    animation-name: slideDown500;
+    animation-duration: .8s;
+  }
+  
+  .close {
+    animation-name: slideUp500;
+    animation-duration: .8s;
+  }
+}
+
+@media (max-width: 410px){
+  .show {
+    animation-name: slideDown410;
+    animation-duration: .8s;
+  }
+  
+  .close {
+    animation-name: slideUp410;
+    animation-duration: .8s;
+  }
+}

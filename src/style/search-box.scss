@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+.search-box-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: rgb(213, 55, 55);
+  background: linear-gradient(90deg, rgba(213, 55, 55, 1) 0%, rgba(68, 1, 5, 1) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 1px 5px 1px black;
+  z-index: 101;
+  .search-players {
+    border: 2px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    width: 190px;
+    height: 41px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 1px black;
+    background: #D8BFD8;
+    cursor: default;
+  }
+  img {
+    opacity: 0;
+    transition: .3s;
+  }
+ 
+  .search-players__icon-wrap {
+    height: 100%;
+    width: 24%;
+  }
+  
+  .search-players__icon {
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid black;
+  }
+  
+  .search-players__info {
+    width: 76%;
+  }
+  
+  .search-players__name {
+    width: 100%;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 3px;
+  }
+  
+  .search-players__last-match {
+    width: 100%;
+    padding-left: 3px;
+  }
+
+  .search-box {
+    position: relative;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .search-box__label {}
+
+  .search-box__input {
+    font-size: 20px;
+    width: 30vw;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border: 2px solid transparent;
+    transition: 0.3s;
+
+    &:focus {
+      box-shadow: 0 2px 15px 1px black;
+      border: 2px solid black;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+
+  .search-box__button {
+    margin-left: 10px;
+  }
+}
+
+.button {
+  font-size: 20px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  border: none;
+  border: 2px solid transparent;
+
+  &:active {
+    background-color: rgb(121, 121, 121)
+  }
+
+  &:focus {
+    box-shadow: 0 2px 15px 1px black;
+    border: 2px solid black;
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+    font-size: 16px;
+    padding: 6px;
+
+  }
+
+  .search-box-wrap {
+    .search-box__input {
+      font-size: 14px;
+    }
+    .search-box{
+      margin-left: 5px;
+    }
+    .search-players {
+      margin: 0;
+      border: 2px solid black;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      display: flex;
+      width: 35%;
+      height: 34px;
+      overflow: hidden;
+      box-shadow: 0 0 5px 1px black;
+      background: #D8BFD8;
+      cursor: pointer;
+    }
+  
+    .search-players__icon {
+      width: 34px;
+      height: auto;
+      border-right: 2px solid black;
+    }
+  
+    .search-players__info {}
+  
+    .search-players__name {
+      overflow: hidden;
+      width: 105px;
+      font-size: 12px;
+      padding-top: 10px;
+      padding-left: 5px;
+    }
+  
+    .search-players__last-match {
+      width: 100px;
+      padding-left: 3px;
+    }
+  }
+
+}
