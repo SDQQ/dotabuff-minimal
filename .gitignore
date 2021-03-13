@@ -1,10 +1,12 @@
 node_modules
 package-lock.json
-package.json
-webpack.config.js
 test
 pngmin.js
 original_img
-src
 assister
 dist
+.firebaserc
+debug.log
+firebase.json
+.firebase
+.gitignore

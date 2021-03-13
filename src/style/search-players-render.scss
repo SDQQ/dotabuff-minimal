@@ -1,0 +1,58 @@
+.search-players-wrap {
+  justify-content: space-evenly;
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: transparent;
+
+
+  img {
+    opacity: 0;
+    transition: .3s;
+  }
+
+}
+
+.search-players {
+  margin: 10px;
+  border: 2px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  width: 190px;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 0 0 5px 1px black;
+  // background-color:rgb(46, 106, 163);
+  background: #D8BFD8;
+  cursor: pointer;
+}
+
+.search-players__icon-wrap {
+  position: relative;
+  height: 100%;
+  width: 29%;
+}
+
+.search-players__icon {
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid black;
+}
+
+.search-players__info {
+  width: 71%;
+}
+
+.search-players__name {
+  width: 100%;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-left: 3px;
+}
+
+.search-players__last-match {
+  width: 100%;
+  padding-left: 3px;
+}
